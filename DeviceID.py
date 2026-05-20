@@ -6,7 +6,8 @@ from aiogram.filters import Command
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 
 # --- НАСТРОЙКИ ---
-TOKEN = "8548422110:AAGWAJwhnFTpxw1D_K6bsILmD-T4M0nq8ao"
+TOKEN = "8652706413:AAH6wU17bvZv-eLa3WhZC3I2Z6Ncuf2leCs"
+
 logging.basicConfig(level=logging.INFO)
 
 
@@ -78,44 +79,44 @@ def init_db():
 
         # --- 40 000 – 70 000 ₽ ---
         ('Realme', 'GT 6', '40к-70к', 'Snapdragon 8s Gen 3, 6000 nits', 'Самый яркий экран в мире', 'Скользкий корпус',
-         'https://img.gizchina.com/2024/10/Realme-GT-7-Pro.jpg'),
+         'https://img.gizchina.com/2024/10/Realme-GT-7-Pro1.jpg'),
         ('Honor', '200 Pro', '40к-70к', 'Snapdragon 8s Gen 3, Studio Harcourt', 'Портретные фото уровня профи',
          'ШИМ на низкой яркости',
          'https://www.hihonor.com/content/dam/honor/global/product-list/smartphone/honor-200-pro/honor-200-pro-black.png'),
         ('Xiaomi', '15 Lite', '40к-70к', 'Snapdragon 7+ Gen 3, Leica', 'Компактный и мощный', 'Высокая цена на старте',
-         'https://i02.appmifile.com/830_operator_sg/22/02/2024/7f342f0e08f870f7d54b830d952674e2.png'),
+         'https://i02.appmifile.com/830_operator_sg/22/02/2024/7f342f0e08f870f7d54b830d9526714e2.png'),
         ('Huawei', 'Nova 13 Pro', '40к-70к', 'Kirin 9010L, Спутниковая связь', 'Связь везде, камера',
          'Нет Google сервисов',
          'https://consumer.huawei.com/content/dam/huawei-cbe/cn/gpts/mkt/pdp/phones/nova13-pro/images/nova13pro-green.png'),
         ('iQOO', 'Neo 10', '40к-70к', 'Snapdragon 8 Gen 3, 144Hz', 'Идеален для киберспорта', 'Средние камеры',
-         'https://m.media-amazon.com/images/I/61NfX7K6GXL.jpg'),
+         'https://m.media-amazon.com/images/I/61NfX7K61GXL.jpg'),
         ('Vivo', 'V40 Pro', '40к-70к', 'Dimensity 9200+, ZEISS оптика', 'Лучшее видео в сегменте', 'Сложно найти в РФ',
-         'https://m.media-amazon.com/images/I/61m15-XpZXL.jpg'),
+         'https://m.media-amazon.com/images/I/61m115-XpZXL.jpg'),
         ('Google', 'Pixel 9a', '40к-70к', 'Tensor G4, AI функции', 'Чистый Android, топ фото',
          'Медленная зарядка (18Вт)',
-         'https://m-cdn.phonearena.com/images/article/161405-940/Google-Pixel-9a-colors-Everything-we-know-so-far.jpg'),
+         'https://m-cdn.phonearena.com/images/article/161405-940/Google-Pixel-9a-colors-Everyth1ing-we-know-so-far.jpg'),
         ('Samsung', 'Galaxy S25 FE', '40к-70к', 'Exynos 2400e, IP68', 'Флагманские фишки дешевле',
          'Пластиковая задняя панель',
-         'https://img.global.news.samsung.com/global/wp-content/uploads/2024/03/Galaxy-A55-5G-A35-5G_Product-Image_3.jpg'),
+         'https://img.global.news.samsung.com/global/wp-content/uploads/2024/03/Galaxy-A55-5G-A35-5G_P1roduct-Image_3.jpg'),
         ('OnePlus', '13R', '40к-70к', 'Snapdragon 8 Gen 3, 5500mAh', 'Быстрая работа, OxygenOS',
-         'Нет беспроводной зарядки', 'https://img.gizchina.com/2024/10/Realme-GT-7-Pro.jpg'),
+         'Нет беспроводной зарядки', 'https://img.gizchina.com/2024/110/Realme-GT-7-Pro.jpg'),
         ('Motorola', 'Edge 60 Pro', '40к-70к', 'Snapdragon 7 Gen 3, 125W', 'Заряжается за 18 минут',
          'Мало обновлений ОС',
-         'https://m-cdn.phonearena.com/images/article/151322-940/iPhone-17-Air-everything-we-know-so-far.jpg'),
+         'https://m-cdn.phonearena.com/images/article/151322-940/iPhon1e-17-Air-everything-we-know-so-far.jpg'),
 
         # --- ФЛАГМАНЫ (От 70 000 ₽) ---
         ('Apple', 'iPhone 17 Pro', 'Флагманы', 'A19 Pro, 12GB RAM, 120Hz', 'Мощность, экосистема', 'Цена',
-         'https://m-cdn.phonearena.com/images/article/151322-940/iPhone-17-Air-everything-we-know-so-far.jpg'),
+         'https://m-cdn.phonearena.com/images/article/151322-940/1iPhone-17-Air-everything-we-know-so-far.jpg'),
         ('Samsung', 'Galaxy S26 Ultra', 'Флагманы', 'Snapdragon 8 Gen 5, 200MP, S-Pen', 'Экран, зум, стилус', 'Размеры',
          'https://www.sammobile.com/wp-content/uploads/2024/09/Galaxy-S25-Ultra-Render-Leak-Front-Back.jpg'),
         ('Xiaomi', '16 Ultra', 'Флагманы', 'Leica Optical, 1" Sensor', 'Лучшая камера в мире', 'Тяжелый блок камер',
-         'https://i02.appmifile.com/830_operator_sg/22/02/2024/7f342f0e08f870f7d54b830d952674e2.png'),
+         'https://i02.appmifile.com/830_operator_sg/22/02/2024/7f342f0e08f870f7d54b8130d952674e2.png'),
         ('Huawei', 'Pura 80 Ultra', 'Флагманы', 'Выдвижная камера RYYB', 'Уникальная оптика', 'Нет Google',
-         'https://consumer.huawei.com/content/dam/huawei-cbe/cn/gpts/mkt/pdp/phones/nova13-pro/images/nova13pro-green.png'),
+         'https://consumer.huawei.com/content/dam/huawei-cbe/cn/gpts/mkt/pdp/phones/nov1a13-pro/images/nova13pro-green.png'),
         ('Honor', 'Magic 8 Pro', 'Флагманы', 'Snapdragon 8 Gen 4, AI-глаз', 'Инновации, батарея', 'Дизайн',
          'https://www.hihonor.com/content/dam/honor/global/product-list/smartphone/honor-magic6-pro/black.png'),
         ('Vivo', 'X110 Pro+', 'Флагманы', 'ZEISS 200MP Periscope', 'Лучший зум для портретов', 'Цена в РФ',
-         'https://m.media-amazon.com/images/I/61m15-XpZXL.jpg'),
+         'https://m.media-amazon.com/images/I/61m115-XpZXL.jpg'),
         ('iQOO', '14 Pro', 'Флагманы', 'SD 8 Gen 4, 2K AMOLED E8', 'Максимальная мощь', 'Скучный дизайн',
          'https://m.media-amazon.com/images/I/61NfX7K6GXL.jpg'),
         ('Realme', 'GT 7 Pro', 'Флагманы', 'Snapdragon 8 Gen 4, IP69', 'Защита от воды (можно плавать)', 'Нет телевика',
